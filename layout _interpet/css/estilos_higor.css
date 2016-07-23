@@ -1,0 +1,59 @@
+/* header .jumbotron{
+	background: #99c8da;
+} */
+
+header img{
+	width:90%;
+	height: auto;
+}
+
+.img-hover img {
+    -webkit-transition: all 1s ease; Safari and Chrome
+    -moz-transition: all 1s ease; Firefox
+    -o-transition: all 1s ease; IE 9
+    -ms-transition: all 1s ease; Opera
+    transition: all 1s ease;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.15); Safari and Chrome
+    -moz-transform:scale(1.15); Firefox
+    -ms-transform:scale(1.15); IE 9
+    -o-transform:translatZ(0) scale(1.15); Opera
+    transform:translatZ(0) scale(1.15);
+}
+
+.descricao p{
+	font-size: 17px;
+	text-indent: 5%;
+	text-align: justify;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+/*efeito de fade in ao entrar no site*/
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.fadeIn {
+-webkit-animation: fadeIn 1.5s ease-in-out;
+-moz-animation: fadeIn 1.5s ease-in-out;
+-o-animation: fadeIn 1.5s ease-in-out;
+animation: fadeIn 1.5s ease-in-out;
+}
+/*---------------------------------*/
