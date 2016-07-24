@@ -68,6 +68,9 @@ animation: fadeIn 1.5s ease-in-out;
 .programacao{
     margin-top: 100px;
     background: #eee;
+    border-bottom-style: solid;
+    border-bottom-color: #c6c6c6;
+    border-bottom-width: 1px;
 }
 
 .titulo-programacao h2{
@@ -125,4 +128,48 @@ animation: fadeIn 1.5s ease-in-out;
 
 .titulo-programacao-17 h3{
     color: #931414;
+}
+
+.comissao{
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: #c6c6c6;
+    border-bottom-width: 1px;
+}
+
+.comissao h2{
+    font-family: 'Audiowide', cursive;
+    font-size: 50px;
+}
+
+.comissao ul li{
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.inscricao{
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: #c6c6c6;
+    border-bottom-width: 1px;
+}
+
+.inscricao h2{
+    font-family: 'Audiowide', cursive;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.inscricao .botao{
+    margin-bottom: 50px;
+}
+
+.inscricao .botao button{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
 }
