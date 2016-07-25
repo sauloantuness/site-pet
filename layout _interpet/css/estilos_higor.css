@@ -173,3 +173,16 @@ animation: fadeIn 1.5s ease-in-out;
     font-size: 20px;
     color: black;
 }
+
+footer .container{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+footer a{
+    color: #008000;
+}
