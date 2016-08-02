@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def interpet(request):
 	return render(request, 'interpet/interpet.html')
+
+def apply(request):
+	return render(request, 'interpet/apply.html')
