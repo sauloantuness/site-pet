@@ -6,4 +6,4 @@ def interpet(request):
 	return render(request, 'interpet/interpet.html')
 
 def apply(request):
-	return render(request, 'interpet/apply.html')
+	return render(request, 'interpet/inscricao.html')

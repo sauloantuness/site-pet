@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Open Sans', 'Helvetica';
     color: #66595c;
 }
@@ -33,9 +33,28 @@ nav .navbar-brand {
     font-size: 20px;
     color: #66595c;
     font-weight: 300;
-
 }
 
-.form-control {
-    margin-top: 10px;
+form .form-group {
+    margin-top: 30px;
+}
+
+form .form-group textarea {
+    height: 100px;
+}
+
+form .form-control[type=number] {
+    max-width: 70px;
+}
+
+form .form-control[type=text] {
+    max-width: 350px;
+}
+
+#specify {
+    display: none;
+}
+
+.form-title {
+    margin-top: 30px;
 }

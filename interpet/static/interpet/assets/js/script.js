@@ -115,7 +115,6 @@ function load_schedule(json, element) {
 }
 
 $(document).ready(function() {
-	console.log('ok')
 	load_schedule(day1, '#day1');
 	load_schedule(day2, '#day2');
 });
@@ -127,6 +126,12 @@ $.localScroll({
 $('ul li').click(function(){
   $(this).addClass('active');
   $(this).parent().children('li').not(this).removeClass('active');
-
 });
 
+$('#other').change(function() {
+	if ($('#specify').is(':visible')) {
+		$('#specify').hide(100);
+		$('#specify input').val('');
+	} else
+		$('#specify').show(100);
+});
