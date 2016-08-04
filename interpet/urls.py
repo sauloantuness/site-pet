@@ -3,6 +3,5 @@ from . import views
 
 urlpatterns = [
 	url(r'^$', views.interpet),
-	url(r'^inscricao/', views.apply),
-
+	url(r'^inscricao/', views.inscricao),
 ]

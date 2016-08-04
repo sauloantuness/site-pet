@@ -44,6 +44,12 @@
 <div class="container">
 	<div class="container header" id="start">
 		<div class="row">
+			{% if request.GET.OK %}
+				<div class="alert alert-success alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<strong>Parabéns!</strong> Sua inscrição foi realizada com sucesso.
+				</div>
+			{% endif %}
 			<div class="col-md-6">
 				<p>
 					O <strong>InterPET</strong> (Encontro dos Grupos PET do CEFET-MG) será realizado
