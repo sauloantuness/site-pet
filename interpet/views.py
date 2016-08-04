@@ -33,6 +33,6 @@ def inscricao(request):
 
 		inscricao.save()
 
-		return redirect("/interpet?OK=True")
+		return render(request, 'interpet/interpet.html', {"inscricaoSucesso": True})
 
 	return render(request, 'interpet/inscricao.html')
