@@ -20,5 +20,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^interpet/', include('interpet.urls')),
+    url(r'^website/', include('website.urls')),
 	url(r'^$', RedirectView.as_view(url='/interpet')),
 ]
