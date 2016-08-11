@@ -31,8 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'django.contrib.sites',
+    'registration',
     'django.contrib.auth',
+    'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
     'website.apps.WebsiteConfig',
     'blog.apps.BlogConfig',
     'interpet.apps.InterpetConfig',
+    'crispy_forms'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -134,3 +137,9 @@ STATICFILES_DIRS = [
 ]
 
 DATE_INPUT_FORMATS = ("%d/%m/%Y", )
+
+CRISPY_TEMPLATE_PACK = 'bootstrap'
+
+
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_AUTO_LOGIN = True
