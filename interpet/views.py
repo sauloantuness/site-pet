@@ -1,5 +1,7 @@
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from .models import *
+from django.core import serializers
 
 # Create your views here.
 
@@ -36,3 +38,11 @@ def inscricao(request):
 		return render(request, 'interpet/interpet.html', {"inscricaoSucesso": True})
 
 	return render(request, 'interpet/inscricao.html')
+
+
+def inscritosJson(request):
+	data =  serializers.serialize("json", Inscricao.objects.all())
+	return HttpResponse(data, content_type='application/json')
+
+def inscritos(request):
+	return render(request, 'interpet/inscritos.html')
