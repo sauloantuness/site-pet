@@ -64,3 +64,7 @@ form .form-control[type=text] {
     margin-left: auto;
     margin-right: auto;
 }
+
+nav ul li:hover {
+    background-color: rgb(225, 225, 225) !important;
+}
