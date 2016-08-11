@@ -36,3 +36,6 @@ def inscricao(request):
 		return render(request, 'interpet/interpet.html', {"inscricaoSucesso": True})
 
 	return render(request, 'interpet/inscricao.html')
+
+def inscricao_ouvinte(request):
+	return render(request, 'interpet/inscricao-ouvinte.html')
