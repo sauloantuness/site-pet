@@ -83,7 +83,7 @@ day2 = [
 	{
 		'start' : '14:00',
 		'end' : '15:30',
-		'description' : 'Desdobramentos do PET: apresentações de petianos egressos',
+		'description' : 'Desdobramentos do PET: apresentações de petianos',
 		'place' : 'Campus I - Auditório'
 	},
 	{
