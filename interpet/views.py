@@ -46,3 +46,6 @@ def inscritosJson(request):
 
 def inscritos(request):
 	return render(request, 'interpet/inscritos.html')
+
+def sobre(request):
+	return render(request,'interpet/sobre.html')

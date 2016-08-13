@@ -68,3 +68,11 @@ form .form-control[type=text] {
 .datatables tr.shown td.details-control {
     background: url('/static/assets/img//details_close.png') no-repeat center center;
 }
+
+.sobre-content{
+    text-align: justify;
+}
+
+.sobre-content h1{
+    text-align: center;
+}
