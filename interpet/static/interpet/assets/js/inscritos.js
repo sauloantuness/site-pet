@@ -1,8 +1,24 @@
 /* Formatting function for row details - modify as you need */
 function format ( d ) {
     // `d` is the original data object for the row
-    console.log(d.fields.Q4)
-    console.log(typeof(d.fields.Q4))
+    if(d.fields.ouvinte){
+        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+            '<tr>'+
+                '<th width="30%">Situação Acadêmica</th>'+
+                '<td>' + d.fields.Q21 + '</td>'+
+            '</tr>'+
+            '<tr>'+
+                '<th>Curso que atua</th>'+
+                '<td>' + d.fields.Q22 + '</td>'+
+            '</tr>'+
+            '<tr>'+
+                '<th>Instituição de origem</th>'+
+                '<td>' + d.fields.Q23 + '</td>'+
+            '</tr>'+
+        '</table>';
+    }
+
+
     return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
         '<tr>'+
             '<th width="30%">Idade</th>'+
@@ -76,9 +92,6 @@ function format ( d ) {
             '<td>' + d.fields.Q20 +'</td>'+
         '</tr>'+
     '</table>';
-
-    console.log(d.fields.Q4)
-    console.log(typeof(d.fields.Q4))
 }
  
 $(document).ready(function() {
