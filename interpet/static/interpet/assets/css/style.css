@@ -56,7 +56,17 @@ form .form-control[type=text] {
 }
 
 .form-title {
-    margin-top: 30px;
+    margin-top: 25px;
+}
+
+.container .row.title.page-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul li:hover {
+    background-color: rgb(225, 225, 225) !important;
 }
 
 

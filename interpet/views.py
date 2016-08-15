@@ -39,7 +39,6 @@ def inscricao(request):
 
 	return render(request, 'interpet/inscricao.html')
 
-
 def inscritosJson(request):
 	data =  serializers.serialize("json", Inscricao.objects.all())
 	return HttpResponse(data, content_type='application/json')
@@ -49,3 +48,6 @@ def inscritos(request):
 
 def sobre(request):
 	return render(request,'interpet/sobre.html')
+
+def inscricao_ouvinte(request):
+	return render(request, 'interpet/inscricao-ouvinte.html')

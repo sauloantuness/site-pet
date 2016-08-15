@@ -129,11 +129,6 @@ $.localScroll({
 	offset:-70
 });
 
-$('ul li').click(function(){
-  $(this).addClass('active');
-  $(this).parent().children('li').not(this).removeClass('active');
-});
-
 $('#other').change(function() {
 	if ($('#specify').is(':visible')) {
 		$('#specify').hide(100);

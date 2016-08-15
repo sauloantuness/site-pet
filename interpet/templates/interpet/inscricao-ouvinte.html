@@ -1,0 +1,99 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CEFET-MG - Interpet</title>
+	<link rel="icon" href="/static/interpet/img/logos/logo_cefet_color.png">
+	<link rel="stylesheet" href="/static/assets/css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="/static/interpet/assets/css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container-fluid">
+    		<div class="navbar-header">
+     			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			    	<span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+    			<a class="navbar-brand" href="/interpet">
+    				<img alt="Interpet" src="/static/interpet/img/logos/logo-only-interpet.png">
+    			</a>
+    		</div>
+	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+					<li><a href="/interpet">Início<span class="sr-only">(current)</span></a></li>
+					<li><a href="/interpet">Dia 1</a></li>
+					<li><a href="/interpet">Dia 2</a></li>
+					<li><a href="/interpet">Informações</a></li>
+					<li class="active"><a href="/interpet/inscricao">Inscrições</a></li>					
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<div class="container">
+	<div class="row title page-header">
+		<h2 class="form-title">Formulário de Inscrição (ouvinte)</h2>
+		<small>
+			Petiano?
+			<a href="/interpet/inscricao">
+				Inscreva-se aqui
+			</a>
+		</small>
+	</div>
+
+	<form method="post" role="form" action="">
+		{% csrf_token %}
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="control-label">Nome</label>
+				<input class="form-control" type="text" name="Q1" required>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Situação acadêmica</label>
+				<div class="radio">
+	  				<label><input type="radio" value="" name="Q3" required>Professor</label>
+				</div>
+				<div class="radio">
+	  				<label><input type="radio" value="" name="Q3">Aluno</label>
+				</div>
+				<div class="radio">
+	  				<label><input type="radio" value="" name="Q3">Outra</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Curso que atua</label>
+				<input class="form-control" type="text" name="Q1" required>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Instituição de origem</label>
+				<input class="form-control" type="text" name="Q1" required>
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary" value="Enviar">
+			</div>
+		</div>
+	</form>	
+</div>	
+
+<script src="/static/interpet/assets/js/jquery.js"></script>
+<script src="/static/assets/js/bootstrap.min.js"></script>
+<script src="/static/interpet/assets/js/jquery.localScroll.min.js"></script>
+<script src="/static/interpet/assets/js/jquery.scrollTo.min.js"></script>
+<script src="/static/interpet/assets/js/script.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+
+
+</body>
+
+</html>
