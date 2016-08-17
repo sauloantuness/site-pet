@@ -1,48 +1,41 @@
-<!DOCTYPE html5>
-<html lang="en">
+{% extends "interpet/base.html" %}
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CEFET-MG - Interpet</title>
-	<link rel="icon" href="/static/interpet/img/logos/logo_cefet_color.png">
-	<link rel="stylesheet" href="/static/assets/css/bootstrap.css" media="screen">
-	<link rel="stylesheet" href="/static/interpet/assets/css/style.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-</head>
-
-<body class="fadeIn">
-
+{% block content %}
 <header>
 	<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-			<div class="navbar-header">
-	 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			    	<span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			    </button>
-				<a class="navbar-brand" href="/interpet">
-					<img alt="Interpet" src="/static/interpet/img/logos/logo-only-interpet.png">
-				</a>
-			</div>
-	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			    <ul class="nav navbar-nav">
-					<li><a href="#start">Início<span class="sr-only">(current)</span></a></li>
-					<li><a href="#title1">Dia 1</a></li>
-					<li><a href="#title2">Dia 2</a></li>
-					<li><a href="#info">Informações</a></li>
-					<li><a href="/interpet/inscricao">Inscrição PET</a></li>
-					<li><a href="/interpet/inscricao-ouvinte">Inscrição Ouvinte</a></li>
-					<li><a href="/interpet/sobre">Sobre</a></li>					
-				</ul>
-			</div>
+  	<div class="container-fluid">
+		<div class="navbar-header">
+ 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		    	<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
+			<a class="navbar-brand" href="/interpet">
+				<img alt="Interpet" src="/static/interpet/img/logos/logo-only-interpet.png">
+			</a>
 		</div>
-	</nav>
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav">
+				<li><a href="#start">Início<span class="sr-only">(current)</span></a></li>
+				<li><a href="#title1">Dia 1</a></li>
+				<li><a href="#title2">Dia 2</a></li>
+				<li><a href="#info">Informações</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inscrições <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/interpet/inscricao">Petiano</a></li>
+						<li><a href="/interpet/inscricao-ouvinte">Ouvinte</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="sobre">Sobre</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
 </header>
-
 <div class="container">
 	<div class="container header" id="start">
 		<div class="row">
@@ -128,15 +121,5 @@
 		</div>		
 	</div>
 </div>
+{% endblock content %}
 
-<script src="/static/interpet/assets/js/jquery.js"></script>
-<script src="/static/assets/js/bootstrap.min.js"></script>
-<script src="/static/interpet/assets/js/jquery.localScroll.min.js"></script>
-<script src="/static/interpet/assets/js/jquery.scrollTo.min.js"></script>
-<script src="/static/interpet/assets/js/script.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
-
-
-</body>
-
-</html>

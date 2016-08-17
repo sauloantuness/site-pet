@@ -123,6 +123,18 @@ function load_schedule(json, element) {
 $(document).ready(function() {
 	load_schedule(day1, '#day1');
 	load_schedule(day2, '#day2');
+	$(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+            $(this).toggleClass('open');
+            $('b', this).toggleClass("caret caret-up");                
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+            $(this).toggleClass('open');
+            $('b', this).toggleClass("caret caret-up");                
+        }
+    );
 });
 
 $.localScroll({

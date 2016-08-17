@@ -1,60 +1,21 @@
-<!DOCTYPE html5>
-<html lang="en">
+{% extends "interpet/base.html" %}
+{% block content %}
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CEFET-MG - Interpet</title>
-		<link rel="icon" href="/static/interpet/img/logos/logo_cefet_color.png">
-		<link rel="stylesheet" href="/static/assets/css/bootstrap.css" media="screen">
-		<link rel="stylesheet" href="/static/interpet/assets/css/style.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	</head>
+<header>
+	{% include "interpet/navbar.html" %}
+</header>
 
-	<body class="fadeIn">
-
-		<header>
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="/interpet">
-							<img alt="Interpet" src="/static/interpet/img/logos/logo-only-interpet.png">
-						</a>
-					</div>
-			    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					    <ul class="nav navbar-nav">
-							<li class="active"><a href="/interpet">Início<span class="sr-only">(current)</span></a></li>
-							<li><a href="/interpet/sobre">Sobre</a></li>					
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-
-		<div class="container">
-			<div class="container header" id="start">
-				<div class="row">
-					<div class="col-md-12 sobre-content">
-						<h1 class="sobre-title">Desenvolvimento do site</h1>
-						<p>Este site foi desenvolvido pelo grupo do Programa de Educação Tutorial do curso de Engenharia de Computação do CEFET-MG (COMPET). É orientado pelo tutor Professor Sandro Renato Dias do Departamento de Computação, CEFET-MG.</p>
-				        <p>Os membros Saulo Antunes, Luís Carlos Cardoso e Higor Coimbra do COMPET atuaram efetivamente no desenvolvimento tanto front-end quanto back-end do site, contando com a experiência dos citados na área de web.</p>
-				        <p>Para conhecer melhor o trabalho do COMPET, acesse o nosso <a href="http://compet.decom.cefetmg.br" target="_blank">site</a> e a nossa <a href="https://www.facebook.com/competcefetmg/?fref=ts" target="_blank">página no Facebook</a>.	</p>
-				        <p>Obrigado!</p>
-					</div>
-				</div>
+<div class="container">
+	<div class="container header" id="start">
+		<div class="row">
+			<div class="col-md-12 sobre-content">
+				<h1 class="sobre-title">Desenvolvimento do site</h1>
+				<p>Este site foi desenvolvido pelo grupo do Programa de Educação Tutorial do curso de Engenharia de Computação do CEFET-MG (COMPET). É orientado pelo tutor Professor Sandro Renato Dias do Departamento de Computação, CEFET-MG.</p>
+		        <p>Os membros Saulo Antunes, Luís Carlos Cardoso e Higor Coimbra do COMPET atuaram efetivamente no desenvolvimento tanto front-end quanto back-end do site, contando com a experiência dos citados na área de web.</p>
+		        <p>Para conhecer melhor o trabalho do COMPET, acesse o nosso <a href="http://compet.decom.cefetmg.br" target="_blank">site</a> e a nossa <a href="https://www.facebook.com/competcefetmg/?fref=ts" target="_blank">página no Facebook</a>.	</p>
+		        <p>Obrigado!</p>
 			</div>
 		</div>
-
-
-		<script src="/static/interpet/assets/js/jquery.js"></script>
-		<script src="/static/assets/js/bootstrap.min.js"></script>
-		<script src="/static/interpet/assets/js/jquery.localScroll.min.js"></script>
-		<script src="/static/interpet/assets/js/jquery.scrollTo.min.js"></script>
-		<script src="/static/interpet/assets/js/script.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
-
-
-	</body>
-
-</html>
+	</div>
+</div>
+{% endblock content %}
